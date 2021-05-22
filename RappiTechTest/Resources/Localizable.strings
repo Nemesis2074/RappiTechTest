@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  RappiTechTest
+
+  Created by Adair de Jesús Castillo Meza on 21/05/21.
+  
+*/
+
+"title_popular" = "Popular";
+"title_top" = "Top Rated";
+"title_upcoming" = "Upcoming";
+"title_search" = "Search";
+
+"label_synopsis" = "Synopsis";
+"label_rating" = "Users rating";
+
+"hint_search" = "Search a movie...";
+
+"empty_search" = "Search";
+"empty_search_details" = "No movies were found.";
+
+"video_url_youtube" = "https://www.youtube.com/watch?v=%@";
+"video_url_video" = "https://vimeo.com/%@";
+
+"alert_status_400" = "Connection error. Try again later.";
+"alert_status_401" = "Unauthorized access";
+"alert_status_500" = "Sorry, we have a problem in our servers 😔";
+"alert_status_601" = "Oops!, you don't have an Internet connection.";
+"alert_status_602" = "There is no data saved.";
+"alert_status_603" = "Something wrong happened saving data. Try again.";
+

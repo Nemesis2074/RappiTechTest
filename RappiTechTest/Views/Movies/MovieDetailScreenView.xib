@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MovieDetailScreenView" customModule="RappiTechTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBu-6h-PdK">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gyc-In-vsj">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Gyc-In-vsj" secondAttribute="height" multiplier="16:9" id="99N-Pl-sSC"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="FIe-v8-qCP">
+                            <rect key="frame" x="16" y="249" width="382" height="257"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kxb-gW-xpc">
+                                    <rect key="frame" x="0.0" y="0.0" width="171.5" height="257"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="kxb-gW-xpc" secondAttribute="height" multiplier="2:3" id="ZBK-5F-HBC"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Th2-1c-WT2">
+                                    <rect key="frame" x="210.5" y="0.0" width="171.5" height="178.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Mortal Kombat (2021)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x10-R3-9pj">
+                                            <rect key="frame" x="0.0" y="0.0" width="171.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="TextPrimary"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Mortal Kombat" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kic-nq-9QV">
+                                            <rect key="frame" x="0.0" y="24.5" width="171.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="TextSecondary"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Acción, Fantasía, Aventura" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guv-KN-EBS">
+                                            <rect key="frame" x="0.0" y="49" width="171.5" height="41"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="TextPrimary"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4h 2m" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37l-EK-DWR">
+                                            <rect key="frame" x="0.0" y="94" width="171.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="TextPrimary"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aZQ-WW-2Si">
+                                            <rect key="frame" x="0.0" y="118.5" width="171.5" height="60"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="z5a-GK-Ual" customClass="RatingView" customModule="RappiTechTest" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="9Tc-2h-BVR"/>
+                                                        <constraint firstAttribute="height" constant="60" id="Vx3-C4-tUv"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="70%"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="de usuarios" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueD-D2-mIJ">
+                                                    <rect key="frame" x="68" y="19.5" width="103.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sinopsis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oo-xM-LHQ">
+                            <rect key="frame" x="16" y="522" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="TextPrimary"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvz-4v-6wE">
+                            <rect key="frame" x="16" y="558.5" width="382" height="122"/>
+                            <string key="text">Un boxeador fracasado descubre un secreto familiar que lo lleva a un torneo místico llamado Mortal Kombat donde se encuentra con un grupo de guerreros que luchan hasta la muerte para salvar los reinos del malvado hechicero Shang Tsung.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="TextPrimary"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFT-sL-Gga">
+                            <rect key="frame" x="167" y="76.5" width="80" height="80"/>
+                            <color key="tintColor" name="TextPrimaryLight"/>
+                            <state key="normal" image="ic_button_play"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8h-m7-hYb">
+                            <rect key="frame" x="366" y="8" width="40" height="40"/>
+                            <color key="tintColor" name="TextPrimaryLight"/>
+                            <state key="normal" image="ic_button_close"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Gyc-In-vsj" firstAttribute="leading" secondItem="bBu-6h-PdK" secondAttribute="leading" id="2Ry-DX-1rX"/>
+                        <constraint firstItem="Gyc-In-vsj" firstAttribute="centerX" secondItem="bBu-6h-PdK" secondAttribute="centerX" id="4uP-VG-mYW"/>
+                        <constraint firstItem="FIe-v8-qCP" firstAttribute="top" secondItem="Gyc-In-vsj" secondAttribute="bottom" constant="16" id="6Fd-Nd-3ns"/>
+                        <constraint firstItem="qvz-4v-6wE" firstAttribute="leading" secondItem="bBu-6h-PdK" secondAttribute="leading" constant="16" id="A76-9r-oDX"/>
+                        <constraint firstAttribute="trailing" secondItem="FIe-v8-qCP" secondAttribute="trailing" constant="16" id="ANu-Ya-xy9"/>
+                        <constraint firstAttribute="trailing" secondItem="2Oo-xM-LHQ" secondAttribute="trailing" constant="16" id="END-ml-lMZ"/>
+                        <constraint firstAttribute="trailing" secondItem="Gyc-In-vsj" secondAttribute="trailing" id="JCO-sF-Fhf"/>
+                        <constraint firstItem="2Oo-xM-LHQ" firstAttribute="top" secondItem="FIe-v8-qCP" secondAttribute="bottom" constant="16" id="L5M-Gg-2xF"/>
+                        <constraint firstItem="Gyc-In-vsj" firstAttribute="top" secondItem="bBu-6h-PdK" secondAttribute="top" id="Q1T-SP-Kyd"/>
+                        <constraint firstItem="k8h-m7-hYb" firstAttribute="top" secondItem="bBu-6h-PdK" secondAttribute="top" constant="8" id="Raq-Eb-EoD"/>
+                        <constraint firstItem="AFT-sL-Gga" firstAttribute="centerX" secondItem="Gyc-In-vsj" secondAttribute="centerX" id="bH3-4w-IKo"/>
+                        <constraint firstAttribute="trailing" secondItem="k8h-m7-hYb" secondAttribute="trailing" constant="8" id="iJO-fe-zVW"/>
+                        <constraint firstAttribute="bottom" secondItem="qvz-4v-6wE" secondAttribute="bottom" constant="32" id="n6v-5B-gbV"/>
+                        <constraint firstAttribute="trailing" secondItem="qvz-4v-6wE" secondAttribute="trailing" constant="16" id="pGd-JJ-xfG"/>
+                        <constraint firstItem="2Oo-xM-LHQ" firstAttribute="leading" secondItem="bBu-6h-PdK" secondAttribute="leading" constant="16" id="sad-ro-5pv"/>
+                        <constraint firstItem="AFT-sL-Gga" firstAttribute="centerY" secondItem="Gyc-In-vsj" secondAttribute="centerY" id="tKz-kz-hxD"/>
+                        <constraint firstItem="qvz-4v-6wE" firstAttribute="top" secondItem="2Oo-xM-LHQ" secondAttribute="bottom" constant="16" id="ta4-ah-RMr"/>
+                        <constraint firstItem="FIe-v8-qCP" firstAttribute="leading" secondItem="bBu-6h-PdK" secondAttribute="leading" constant="16" id="uI0-bU-M5s"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="BgGeneral"/>
+            <constraints>
+                <constraint firstItem="bBu-6h-PdK" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="51F-s8-W3h"/>
+                <constraint firstItem="bBu-6h-PdK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="66C-50-H3q"/>
+                <constraint firstItem="bBu-6h-PdK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ECZ-Er-3dQ"/>
+                <constraint firstItem="bBu-6h-PdK" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="wKq-Hn-RhV"/>
+            </constraints>
+            <connections>
+                <outlet property="backdrop" destination="Gyc-In-vsj" id="FUc-ZG-HSD"/>
+                <outlet property="closeButton" destination="k8h-m7-hYb" id="iaG-zz-bsc"/>
+                <outlet property="duration" destination="37l-EK-DWR" id="7af-me-itr"/>
+                <outlet property="genres" destination="guv-KN-EBS" id="KsP-pB-vyL"/>
+                <outlet property="originalTitle" destination="Kic-nq-9QV" id="FGt-um-Dla"/>
+                <outlet property="playButton" destination="AFT-sL-Gga" id="H7a-I8-SdD"/>
+                <outlet property="poster" destination="kxb-gW-xpc" id="aI6-gX-PTe"/>
+                <outlet property="rating" destination="z5a-GK-Ual" id="W3A-cr-D8g"/>
+                <outlet property="ratingLabel" destination="ueD-D2-mIJ" id="LZy-XV-JLn"/>
+                <outlet property="scrollView" destination="bBu-6h-PdK" id="KaA-gJ-aEN"/>
+                <outlet property="synopsis" destination="qvz-4v-6wE" id="Crp-Ej-pB2"/>
+                <outlet property="synopsisLabel" destination="2Oo-xM-LHQ" id="evx-mS-YT4"/>
+                <outlet property="title" destination="x10-R3-9pj" id="0d4-4T-0Op"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_button_close" width="40" height="40"/>
+        <image name="ic_button_play" width="80" height="80"/>
+        <namedColor name="BgGeneral">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimary">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimaryLight">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextSecondary">
+            <color red="0.34099999070167542" green="0.34099999070167542" blue="0.37299999594688416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

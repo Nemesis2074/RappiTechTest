@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aON-1v-OU5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="te8-Pt-SAi">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailViewController" id="8EE-dQ-4bD" customClass="MovieDetailViewController" customModule="RappiTechTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VVT-ZJ-qza">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyp-vc-zIk" customClass="XibView" customModule="RappiTechTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibFileName" value="MovieDetailScreenView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wpg-oG-9XM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eyp-vc-zIk" firstAttribute="leading" secondItem="wpg-oG-9XM" secondAttribute="leading" id="Ps7-gG-Ncx"/>
+                            <constraint firstAttribute="bottom" secondItem="eyp-vc-zIk" secondAttribute="bottom" id="Um6-DO-nbq"/>
+                            <constraint firstItem="eyp-vc-zIk" firstAttribute="trailing" secondItem="wpg-oG-9XM" secondAttribute="trailing" id="mhC-QF-V5f"/>
+                            <constraint firstItem="eyp-vc-zIk" firstAttribute="top" secondItem="VVT-ZJ-qza" secondAttribute="top" id="wGi-eT-rbV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yyO-6j-eHe"/>
+                    <connections>
+                        <outlet property="containerView" destination="eyp-vc-zIk" id="qZA-5Y-1tk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJv-uM-YTg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2386" y="123"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="aIP-6L-ZxY">
+            <objects>
+                <viewController storyboardIdentifier="MoviesViewController" id="FE0-bd-2Ir" customClass="MoviesViewController" customModule="RappiTechTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qIU-ob-syT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6u-wh-hjC" customClass="XibView" customModule="RappiTechTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibFileName" value="MoviesScreenView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fB7-N1-HCM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n6u-wh-hjC" firstAttribute="trailing" secondItem="fB7-N1-HCM" secondAttribute="trailing" id="0wk-lg-dpD"/>
+                            <constraint firstItem="n6u-wh-hjC" firstAttribute="top" secondItem="qIU-ob-syT" secondAttribute="top" id="Rqh-3e-hZS"/>
+                            <constraint firstItem="n6u-wh-hjC" firstAttribute="bottom" secondItem="fB7-N1-HCM" secondAttribute="bottom" id="Zhf-YN-ebS"/>
+                            <constraint firstItem="n6u-wh-hjC" firstAttribute="leading" secondItem="fB7-N1-HCM" secondAttribute="leading" id="zR7-C5-Aww"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" selectedImage="tab_popular" id="FQc-S0-j6i"/>
+                    <connections>
+                        <outlet property="containerView" destination="n6u-wh-hjC" id="4y1-2v-sP6"/>
+                        <segue destination="8EE-dQ-4bD" kind="show" id="OFi-kc-yuG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4s-gz-n0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1464" y="123"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="bnI-fl-QBr">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="jbk-LZ-NUB" customClass="SearchViewController" customModule="RappiTechTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FFe-iG-DC1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POS-bF-qr9" customClass="XibView" customModule="RappiTechTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibFileName" value="SearchScreenView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lFM-0j-4qD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="POS-bF-qr9" firstAttribute="trailing" secondItem="lFM-0j-4qD" secondAttribute="trailing" id="2Ef-a3-r4S"/>
+                            <constraint firstItem="POS-bF-qr9" firstAttribute="leading" secondItem="lFM-0j-4qD" secondAttribute="leading" id="2VC-nX-Tyc"/>
+                            <constraint firstItem="lFM-0j-4qD" firstAttribute="bottom" secondItem="POS-bF-qr9" secondAttribute="bottom" id="tFu-Sd-dcH"/>
+                            <constraint firstItem="POS-bF-qr9" firstAttribute="top" secondItem="FFe-iG-DC1" secondAttribute="top" id="twW-DX-Ljm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="fZj-Sm-wot"/>
+                    <navigationItem key="navigationItem" id="hpz-vs-Iwg"/>
+                    <connections>
+                        <outlet property="containerView" destination="POS-bF-qr9" id="SSj-Cd-JPh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFg-7w-g7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463.768115942029" y="823.66071428571422"/>
+        </scene>
+        <!--Tabs View Controller-->
+        <scene sceneID="ZaA-ug-llT">
+            <objects>
+                <tabBarController storyboardIdentifier="TabsViewController" id="aON-1v-OU5" customClass="TabsViewController" customModule="RappiTechTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iFg-n8-eF7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <color key="barTintColor" name="BgGeneral"/>
+                        <color key="selectedImageTintColor" name="TextPrimary"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FE0-bd-2Ir" kind="relationship" relationship="viewControllers" id="2R2-aD-DHX"/>
+                        <segue destination="jbk-LZ-NUB" kind="relationship" relationship="viewControllers" id="S4H-rC-gbA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CCW-kj-LGO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_popular" width="24" height="24"/>
+        <namedColor name="AccentColor">
+            <color red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BgGeneral">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimary">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
